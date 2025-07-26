@@ -1,17 +1,17 @@
 {
     "configurations": [
         {
-            "name": "ROS Jazzy", // 이름을 'ROS Jazzy'로 변경하여 명확성 추가
+            "name": "ROS Jazzy",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/opt/ros/jazzy/include/**" // <-- foxy를 jazzy로 수정
+                "/opt/ros/jazzy/include/**"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/g++",
             "cStandard": "gnu17", // c99도 가능하지만, gnu17이 더 최신 표준 포함
             "cppStandard": "c++17", // <-- c++14를 c++17로 수정 권장
             "intelliSenseMode": "linux-gcc-x64",
-            "compileCommands": "${workspaceFolder}/build/compile_commands.json" // ROS 2 빌드시 생성되는 파일 경로 (IntelliSense 정확도 높임)
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json"
         }
     ],
     "version": 4

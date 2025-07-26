@@ -2,7 +2,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "colcon build", // 레이블이 'colcon build'여야 합니다.
+      "label": "colcon build",
       "type": "shell",
       "command": "source /opt/ros/jazzy/setup.bash && source install/local_setup.bash && colcon build --symlink-install",
       "group": {
