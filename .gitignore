@@ -1,0 +1,10 @@
+build/
+install/
+log/
+.vscode/*.code-workspace
+.vscode/*.log
+# Python caches
+__pycache__/
+.pytest_cache/
+*.egg-info/
+.DS_Store # macOS specific

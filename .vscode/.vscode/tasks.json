@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "colcon build", // 레이블이 'colcon build'여야 합니다.
+      "type": "shell",
+      "command": "source /opt/ros/jazzy/setup.bash && source install/local_setup.bash && colcon build --symlink-install",
+      "group": {
+        "kind": "build",
+        "isDefault": true // <-- 이것이 true여야 Ctrl+Shift+B로 이 태스크가 실행됩니다.
+      },
+      "problemMatcher": [],
+      "detail": "Build ROS 2 workspace"
+    },
+    {
+      "label": "colcon clean",
+      "type": "shell",
+      "command": "source /opt/ros/jazzy/setup.bash && source install/local_setup.bash && rm -rf build install log",
+      "group": "build",
+      "problemMatcher": [],
+      "detail": "Clean ROS 2 workspace"
+    }
+  ]
+}
